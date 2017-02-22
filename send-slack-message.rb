@@ -9,7 +9,7 @@ require 'json'
 # Date: 3/25/2015
 #
 # USAGE: ruby send-slack-message.rb [is_pull_request: boolean] [build passed: boolean] [username: string] [build_link: string] [slack_webhook_url: string] [channel (optional): string] [plan name (optional): string]
-# Ex. ruby send-slack-message.rb "true" "true" "scott.bishop" "https://bamboo.com/PULLREQUEST-6227" "https://hooks.slack.com/services/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" "#android" "Master"
+# Ex. ruby send-slack-message.rb "true" "true" "scott.bishop" "https://bamboo.com/PULLREQUEST-6227" "https://hooks.slack.com/services/........." "#android" "Master"
 def send_slack_message
   begin
     is_pull_request = ARGV[0]
